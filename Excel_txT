@@ -12,4 +12,4 @@ Sub ExportTxt()
             Close #1
         End If
     Next
-End Su
+End Sub
