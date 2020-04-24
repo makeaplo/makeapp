@@ -1,0 +1,15 @@
+Sub ExportTxt()
+    Dim FilePath As String
+    Dim Cell As Range, i As Integer
+ 
+    FilePath = "E:\"
+    For Each Cell In Range("A2:A" & Cells(Rows.Count, 1).End(xlUp).Row)
+        If Not IsEmpty(Cell) Then
+            Open FilePath & Cell & ".txt" For Append As #1
+            For i = 1 To Cells(Cell.Row, Columns.Count).End(xlToLeft).Column - 1
+                Print #1, Cell.Offset(0, i)
+            Next i
+            Close #1
+        End If
+    Next
+End Su
