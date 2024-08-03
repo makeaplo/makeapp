@@ -9,5 +9,3 @@
 感谢各位大佬提供的方案
 
 
-
-欢迎访问我的[ConfyUI](https://makeapp.top:8188)
